@@ -1,0 +1,20 @@
+#### joe made this: http://goel.io/joe
+
+#####=== CSharp ===#####
+
+*.exe
+*.dll
+*.pdb
+
+*.suo
+
+*.csproj.user
+
+**/bin/
+**/obj/
+
+# Vim
+*.*~
+*.swp
+
+*.datasource

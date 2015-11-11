@@ -1,5 +1,61 @@
 #### joe made this: http://goel.io/joe
 
+#####=== Vim ===#####
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+#### joe made this: http://goel.io/joe
+
+#####=== Eclipse ===#####
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+#### joe made this: http://goel.io/joe
+
 #####=== Scala ===#####
 
 *.class
@@ -20,3 +76,5 @@ project/plugins/project/
 .scala_dependencies
 .worksheet
 
+
+.cache_main

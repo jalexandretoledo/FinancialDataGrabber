@@ -43,23 +43,28 @@ namespace CVMDownload
                 return;
             }
 
+            var requestInterceptor = new InspectorBehavior();
+            client.Endpoint.EndpointBehaviors.Add(requestInterceptor);
+
             CVMWebCotas.sessaoIdHeader login = null;
             client.Login(ref login, idSistema, senha);
+            Console.WriteLine(requestInterceptor.LastRequestXML);
+            Console.WriteLine(requestInterceptor.LastResponseXML);
 
             var strData = DateTime.Today.AddDays(dias).ToString("yyyy-MM-dd");
             Console.WriteLine("Looking for file from {0}...", strData);
 
             if ("FUNDO".Equals(args[3]))
             {
-                DownloadFundos(client, login, strData);
+                DownloadFundos(client, requestInterceptor, login, strData);
             }
             else if ("COTAS".Equals(args[3]))
             {
-                DownloadCotas(client, login, strData);
+                DownloadCotas(client, requestInterceptor, login, strData);
             }
             else if ("ANUAL".Equals(args[3]))
             {
-                DownloadAnual(client, login);
+                DownloadAnual(client, requestInterceptor, login);
             }
             else
             {
@@ -72,9 +77,15 @@ namespace CVMDownload
 
         }
 
-        private static void DownloadFundos(CVMWebCotas.WsDownloadInfsSoapClient client, CVMWebCotas.sessaoIdHeader login, String strData)
+        private static void DownloadFundos(
+            CVMWebCotas.WsDownloadInfsSoapClient client,
+            InspectorBehavior requestInspector,
+            CVMWebCotas.sessaoIdHeader login,
+            String strData)
         {
             var url = client.solicAutorizDownloadCadastro(ref login, strData, "Teste de Sistema");
+            Console.WriteLine(requestInspector.LastRequestXML);
+            Console.WriteLine(requestInspector.LastResponseXML);
             Console.WriteLine("URL: {0}", url);
 
             System.Windows.Forms.Clipboard.SetText(url);
@@ -85,7 +96,11 @@ namespace CVMDownload
             Console.WriteLine("Downloaded!");
         }
 
-        private static void DownloadCotas(CVMWebCotas.WsDownloadInfsSoapClient client, CVMWebCotas.sessaoIdHeader login, String strData)
+        private static void DownloadCotas(
+            CVMWebCotas.WsDownloadInfsSoapClient client,
+            InspectorBehavior requestInspector,
+            CVMWebCotas.sessaoIdHeader login,
+            String strData)
         {
             /*
             var lista = client.retornaListaComptcDocs(ref login, ID_TIPO_INFORME_DIARIO, strData);
@@ -105,8 +120,10 @@ namespace CVMDownload
             Console.WriteLine("Pressione ENTER...");
             Console.ReadLine();
             var url = client.solicAutorizDownloadArqComptc(ref login, ID_TIPO_INFORME_DIARIO, strData, "Teste de sistema");
-
+            Console.WriteLine(requestInspector.LastRequestXML);
+            Console.WriteLine(requestInspector.LastResponseXML);
             Console.WriteLine("URL: {0}", url);
+
             System.Windows.Forms.Clipboard.SetText(url);
 
             var filename = String.Format(@"C:\Temp\Cotas-{0}.zip", strData);
@@ -115,11 +132,16 @@ namespace CVMDownload
             Console.WriteLine("Downloaded!");
         }
 
-        private static void DownloadAnual(CVMWebCotas.WsDownloadInfsSoapClient client, CVMWebCotas.sessaoIdHeader login)
+        private static void DownloadAnual(
+            CVMWebCotas.WsDownloadInfsSoapClient client,
+            InspectorBehavior requestInspector,
+            CVMWebCotas.sessaoIdHeader login)
         {
             var url = client.solicAutorizDownloadArqAnual(ref login, ID_TIPO_INFORME_DIARIO, "Teste de sistema");
-
+            Console.WriteLine(requestInspector.LastRequestXML);
+            Console.WriteLine(requestInspector.LastResponseXML);
             Console.WriteLine("URL: {0}", url);
+
             System.Windows.Forms.Clipboard.SetText(url);
 
             var filename = String.Format(@"C:\Temp\Anual-{0:yyyyMMddHHmmss}.zip", DateTime.Now);

@@ -1,5 +1,3 @@
-import ScalaxbKeys._
-
 name := """financial-data-grabber"""
 
 version := "0.1"

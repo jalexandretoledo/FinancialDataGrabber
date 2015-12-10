@@ -30,6 +30,10 @@ namespace CVMDownload
             }
         }
 
+        public List<String> LastRequestHeaders
+        {
+            get { return myMessageInspector.LastRequestHeaders; }
+        }
 
         private MyMessageInspector myMessageInspector = new MyMessageInspector();
         public void AddBindingParameters(ServiceEndpoint endpoint, System.ServiceModel.Channels.BindingParameterCollection bindingParameters)

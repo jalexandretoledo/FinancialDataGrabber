@@ -16,6 +16,7 @@ namespace CVMDownload
     {
         public string LastRequestXML { get; private set; }
         public string LastResponseXML { get; private set; }
+        public List<String> LastRequestHeaders { get; private set; }
         public void AfterReceiveReply(ref System.ServiceModel.Channels.Message reply, object correlationState)
         {
             LastResponseXML = reply.ToString();
@@ -24,6 +25,14 @@ namespace CVMDownload
         public object BeforeSendRequest(ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel)
         {
             LastRequestXML = request.ToString();
+            LastRequestHeaders = new List<String>();
+
+            foreach (var h in request.Headers)
+            {
+                LastRequestHeaders.Add(h.ToString());
+            }
+
+
             return request;
         }
     }

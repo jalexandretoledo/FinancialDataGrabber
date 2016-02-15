@@ -48,8 +48,8 @@ namespace CVMDownload
 
             CVMWebCotas.sessaoIdHeader login = null;
             client.Login(ref login, idSistema, senha);
-            Console.WriteLine(requestInterceptor.LastRequestXML);
-            Console.WriteLine(requestInterceptor.LastResponseXML);
+            Console.WriteLine("REQUEST:" + requestInterceptor.LastRequestXML);
+            Console.WriteLine("RESPONSE:" + requestInterceptor.LastResponseXML);
 
             var strData = DateTime.Today.AddDays(dias).ToString("yyyy-MM-dd");
             Console.WriteLine("Looking for file from {0}...", strData);
@@ -84,8 +84,22 @@ namespace CVMDownload
             String strData)
         {
             var url = client.solicAutorizDownloadCadastro(ref login, strData, "Teste de Sistema");
-            Console.WriteLine(requestInspector.LastRequestXML);
-            Console.WriteLine(requestInspector.LastResponseXML);
+            Console.WriteLine("REQUEST:" + requestInspector.LastRequestXML);
+
+            var hdrs = requestInspector.LastRequestHeaders;
+            if (hdrs != null)
+            {
+                Console.WriteLine("-- Headers ------------------------------------------------------------------------");
+                foreach (var h in hdrs)
+                {
+                    Console.WriteLine(h);
+                }
+                Console.WriteLine("------------------------------------------------------------");
+            }
+
+            Console.WriteLine("RESPONSE:" + requestInspector.LastResponseXML);
+
+
             Console.WriteLine("URL: {0}", url);
 
             System.Windows.Forms.Clipboard.SetText(url);
@@ -120,8 +134,8 @@ namespace CVMDownload
             Console.WriteLine("Pressione ENTER...");
             Console.ReadLine();
             var url = client.solicAutorizDownloadArqComptc(ref login, ID_TIPO_INFORME_DIARIO, strData, "Teste de sistema");
-            Console.WriteLine(requestInspector.LastRequestXML);
-            Console.WriteLine(requestInspector.LastResponseXML);
+            Console.WriteLine("REQUEST:" + requestInspector.LastRequestXML);
+            Console.WriteLine("RESPONSE:" + requestInspector.LastResponseXML);
             Console.WriteLine("URL: {0}", url);
 
             System.Windows.Forms.Clipboard.SetText(url);
@@ -138,8 +152,8 @@ namespace CVMDownload
             CVMWebCotas.sessaoIdHeader login)
         {
             var url = client.solicAutorizDownloadArqAnual(ref login, ID_TIPO_INFORME_DIARIO, "Teste de sistema");
-            Console.WriteLine(requestInspector.LastRequestXML);
-            Console.WriteLine(requestInspector.LastResponseXML);
+            Console.WriteLine("REQUEST:" + requestInspector.LastRequestXML);
+            Console.WriteLine("RESPONSE:" + requestInspector.LastResponseXML);
             Console.WriteLine("URL: {0}", url);
 
             System.Windows.Forms.Clipboard.SetText(url);

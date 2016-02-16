@@ -23,13 +23,17 @@ namespace Sample
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Bootstrap.Instance.Initialize();
+
+            var userId = Properties.Settings.Default.UserId;
+            var password = Properties.Settings.Default.Password;
+
+            Bootstrap.Instance.Initialize(userId, password);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Bootstrap.Instance.FundosUpdate(textBox1.Text);
+            Bootstrap.Instance.FundosUpdate();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.cvm.gov.br/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.cvm.gov.br/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.cvm.gov.br/webservices/">
+      <s:element name="retornaListaComptcDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtIniEntregDoc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaListaComptcDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaListaComptcDocsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="sessaoIdHeader" type="tns:sessaoIdHeader" />
+      <s:complexType name="sessaoIdHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdSessao" type="s:int" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="retornaListaComptcDocsPartic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtIniEntregDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNrPfPj" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaListaComptcDocsParticResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaListaComptcDocsParticResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaListaComptcDocsAdm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtIniEntregDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNrPfPj" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaListaComptcDocsAdmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaListaComptcDocsAdmResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadCadastro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strDtRefer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMotivoAutorizDownload" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadCadastroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicAutorizDownloadCadastroResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqComptc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtComptcDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMotivoAutorizDownload" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqComptcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicAutorizDownloadArqComptcResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqEntrega">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMotivoAutorizDownload" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqEntregaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicAutorizDownloadArqEntregaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqEntregaPorData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtEntregaDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMotivoAutorizDownload" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqEntregaPorDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicAutorizDownloadArqEntregaPorDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqAnual">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMotivoAutorizDownload" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="solicAutorizDownloadArqAnualResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="solicAutorizDownloadArqAnualResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaDtLmtEntrDocsArqsDisp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaDtLmtEntrDocsArqsDispResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaDtLmtEntrDocsArqsDispResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaListaDownloadDocs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpPartic" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strNrPfPj" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iCdTpDoc" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtIni" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDtFim" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaListaDownloadDocsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaListaDownloadDocsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iNrSist" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="strSenha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="retornaListaComptcDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaListaComptcDocs" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaListaComptcDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocssessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsParticSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaListaComptcDocsPartic" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsParticSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaListaComptcDocsParticResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsParticsessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsAdmSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaListaComptcDocsAdm" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsAdmSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaListaComptcDocsAdmResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaComptcDocsAdmsessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadCadastroSoapIn">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadCadastro" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadCadastroSoapOut">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadCadastroResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadCadastrosessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqComptcSoapIn">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqComptc" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqComptcSoapOut">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqComptcResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqComptcsessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqEntregaSoapIn">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqEntrega" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqEntregaSoapOut">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqEntregaResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqEntregasessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqEntregaPorDataSoapIn">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqEntregaPorData" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqEntregaPorDataSoapOut">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqEntregaPorDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqEntregaPorDatasessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqAnualSoapIn">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqAnual" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqAnualSoapOut">
+    <wsdl:part name="parameters" element="tns:solicAutorizDownloadArqAnualResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicAutorizDownloadArqAnualsessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="retornaDtLmtEntrDocsArqsDispSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaDtLmtEntrDocsArqsDisp" />
+  </wsdl:message>
+  <wsdl:message name="retornaDtLmtEntrDocsArqsDispSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaDtLmtEntrDocsArqsDispResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaDtLmtEntrDocsArqsDispsessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaDownloadDocsSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaListaDownloadDocs" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaDownloadDocsSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaListaDownloadDocsResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaListaDownloadDocssessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginsessaoIdHeader">
+    <wsdl:part name="sessaoIdHeader" element="tns:sessaoIdHeader" />
+  </wsdl:message>
+  <wsdl:portType name="WsDownloadInfsSoap">
+    <wsdl:operation name="retornaListaComptcDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna um array de strings contendo as datas de competências de documentos entregues a partir de determinada data.</wsdl:documentation>
+      <wsdl:input message="tns:retornaListaComptcDocsSoapIn" />
+      <wsdl:output message="tns:retornaListaComptcDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaComptcDocsPartic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna um array de strings contendo as datas de competências de documentos entregues a partir de determinada data e CNPJ de participante.</wsdl:documentation>
+      <wsdl:input message="tns:retornaListaComptcDocsParticSoapIn" />
+      <wsdl:output message="tns:retornaListaComptcDocsParticSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaComptcDocsAdm">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna um array de strings contendo as datas de competências de documentos entregues a partir de determinada data e CNPJ de administrador</wsdl:documentation>
+      <wsdl:input message="tns:retornaListaComptcDocsAdmSoapIn" />
+      <wsdl:output message="tns:retornaListaComptcDocsAdmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadCadastro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica autorização para download e retorna string contendo URL para download de arquivo (referência DtComptcDoc).</wsdl:documentation>
+      <wsdl:input message="tns:solicAutorizDownloadCadastroSoapIn" />
+      <wsdl:output message="tns:solicAutorizDownloadCadastroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqComptc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica autorização para download e retorna string contendo URL para download de arquivo (referência DtComptcDoc).</wsdl:documentation>
+      <wsdl:input message="tns:solicAutorizDownloadArqComptcSoapIn" />
+      <wsdl:output message="tns:solicAutorizDownloadArqComptcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqEntrega">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica autorização para download e retorna string contendo URL para download de arquivo (referência DtEntregaDoc)</wsdl:documentation>
+      <wsdl:input message="tns:solicAutorizDownloadArqEntregaSoapIn" />
+      <wsdl:output message="tns:solicAutorizDownloadArqEntregaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqEntregaPorData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica autorização para download e retorna string contendo URL para download de arquivo (referência DtEntregaDoc)</wsdl:documentation>
+      <wsdl:input message="tns:solicAutorizDownloadArqEntregaPorDataSoapIn" />
+      <wsdl:output message="tns:solicAutorizDownloadArqEntregaPorDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqAnual">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica autorização para download e retorna string contendo URL para download de arquivo (referência PeriodoAnual)</wsdl:documentation>
+      <wsdl:input message="tns:solicAutorizDownloadArqAnualSoapIn" />
+      <wsdl:output message="tns:solicAutorizDownloadArqAnualSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaDtLmtEntrDocsArqsDisp">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna a data limite de entrega de documentos (pelos administradores) que foram considerados na geração dos arquivos compactados, atualmente disponíveis no servidor.</wsdl:documentation>
+      <wsdl:input message="tns:retornaDtLmtEntrDocsArqsDispSoapIn" />
+      <wsdl:output message="tns:retornaDtLmtEntrDocsArqsDispSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaDownloadDocs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Retorna um Array de strings com as URLS para download de documentos recebidos pela CVM. Contempla Documentos Eventuais, Demonstrativo Trimestral e Demonstrações Financeiras Anuais. Disponível somente para fundos FIDC.</wsdl:documentation>
+      <wsdl:input message="tns:retornaListaDownloadDocsSoapIn" />
+      <wsdl:output message="tns:retornaListaDownloadDocsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verifica credenciais e efetua o login no CVMWeb.</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsDownloadInfsSoap" type="tns:WsDownloadInfsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retornaListaComptcDocs">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaComptcDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaComptcDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaComptcDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaComptcDocsPartic">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaComptcDocsPartic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaComptcDocsParticsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaComptcDocsParticsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaComptcDocsAdm">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaComptcDocsAdm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaComptcDocsAdmsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaComptcDocsAdmsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadCadastro">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadCadastro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadCadastrosessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadCadastrosessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqComptc">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqComptc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqComptcsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqComptcsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqEntrega">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntrega" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqEntregasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqEntregasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqEntregaPorData">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntregaPorData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqEntregaPorDatasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqEntregaPorDatasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqAnual">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqAnual" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqAnualsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:solicAutorizDownloadArqAnualsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaDtLmtEntrDocsArqsDisp">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/retornaDtLmtEntrDocsArqsDisp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaDtLmtEntrDocsArqsDispsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaDtLmtEntrDocsArqsDispsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaDownloadDocs">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaDownloadDocs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaDownloadDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:retornaListaDownloadDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://www.cvm.gov.br/webservices/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:LoginsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:LoginsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WsDownloadInfsSoap12" type="tns:WsDownloadInfsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retornaListaComptcDocs">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaComptcDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaComptcDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaComptcDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaComptcDocsPartic">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaComptcDocsPartic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaComptcDocsParticsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaComptcDocsParticsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaComptcDocsAdm">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaComptcDocsAdm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaComptcDocsAdmsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaComptcDocsAdmsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadCadastro">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadCadastro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadCadastrosessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadCadastrosessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqComptc">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqComptc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqComptcsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqComptcsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqEntrega">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntrega" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqEntregasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqEntregasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqEntregaPorData">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntregaPorData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqEntregaPorDatasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqEntregaPorDatasessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicAutorizDownloadArqAnual">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqAnual" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqAnualsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:solicAutorizDownloadArqAnualsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaDtLmtEntrDocsArqsDisp">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/retornaDtLmtEntrDocsArqsDisp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaDtLmtEntrDocsArqsDispsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaDtLmtEntrDocsArqsDispsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaListaDownloadDocs">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/retornaListaDownloadDocs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaDownloadDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:retornaListaDownloadDocssessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://www.cvm.gov.br/webservices/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:LoginsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:LoginsessaoIdHeader" part="sessaoIdHeader" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WsDownloadInfs">
+    <wsdl:port name="WsDownloadInfsSoap" binding="tns:WsDownloadInfsSoap">
+      <soap:address location="http://sistemas.cvm.gov.br/webservices/Sistemas/SCW/CDocs/WsDownloadInfs.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WsDownloadInfsSoap12" binding="tns:WsDownloadInfsSoap12">
+      <soap12:address location="http://sistemas.cvm.gov.br/webservices/Sistemas/SCW/CDocs/WsDownloadInfs.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

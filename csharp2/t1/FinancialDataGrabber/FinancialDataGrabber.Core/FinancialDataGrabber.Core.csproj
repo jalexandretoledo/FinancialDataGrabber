@@ -50,11 +50,19 @@
   <ItemGroup>
     <Compile Include="Actor\CommandActor.cs" />
     <Compile Include="Actor\ControllerActor.cs" />
+    <Compile Include="Actor\NotifierActor.cs" />
     <Compile Include="Bootstrap.cs" />
+    <Compile Include="Message\Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinancialDataGrabber.CVM\FinancialDataGrabber.CVM.csproj">
+      <Project>{7604509d-f233-4fe6-99e8-1ab0df9d7137}</Project>
+      <Name>FinancialDataGrabber.CVM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,6 +8,8 @@ namespace FinancialDataGrabber.Core.Actor
 {
     using Akka.Actor;
 
+    using FinancialDataGrabber.Core.Message;
+
     internal class ControllerActor
         : UntypedActor
     {
@@ -16,27 +18,20 @@ namespace FinancialDataGrabber.Core.Actor
 
         protected override void OnReceive(object message)
         {
-            var str = (message as String);
-            if (str != null)
+            if (message is Start)
             {
-                if ("start".Equals(str, StringComparison.CurrentCultureIgnoreCase))
-                {
-                    commandActor = Context.ActorOf(Props.Create<CommandActor>(), "commandProcessor");
-                    Become(Running);
-                }
+                var s = (message as Start);
+                commandActor = Context.ActorOf(Props.Create<CommandActor>(() => new CommandActor(s.UserId, s.Password)), "commandProcessor");
+                Become(Running);
             }
         }
 
         protected void Running(object message)
         {
-            var str = (message as String);
-            if (str != null)
+            if (message is Shutdown)
             {
-                if ("stop".Equals(str, StringComparison.CurrentCultureIgnoreCase))
-                {
-                    commandActor.Tell("kill");
-                    Become(OnReceive);
-                }
+                commandActor.Tell(message);
+                Become(OnReceive);
             }
         }
     }

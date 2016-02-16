@@ -8,100 +8,100 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CVMDownload.CVMWebCotas {
+namespace FinancialDataGrabber.CVM.CVMWeb {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.cvm.gov.br/webservices/", ConfigurationName="CVMWebCotas.WsDownloadInfsSoap")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.cvm.gov.br/webservices/", ConfigurationName="CVMWeb.WsDownloadInfsSoap")]
     public interface WsDownloadInfsSoap {
         
         // CODEGEN: Generating message contract since message retornaListaComptcDocsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaComptcDocs", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.retornaListaComptcDocsResponse retornaListaComptcDocs(CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsResponse retornaListaComptcDocs(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaComptcDocs", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsResponse> retornaListaComptcDocsAsync(CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsResponse> retornaListaComptcDocsAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest request);
         
         // CODEGEN: Generating message contract since message retornaListaComptcDocsParticRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaComptcDocsPartic", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.retornaListaComptcDocsParticResponse retornaListaComptcDocsPartic(CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticResponse retornaListaComptcDocsPartic(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaComptcDocsPartic", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsParticResponse> retornaListaComptcDocsParticAsync(CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticResponse> retornaListaComptcDocsParticAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest request);
         
         // CODEGEN: Generating message contract since message retornaListaComptcDocsAdmRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaComptcDocsAdm", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmResponse retornaListaComptcDocsAdm(CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmResponse retornaListaComptcDocsAdm(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaComptcDocsAdm", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmResponse> retornaListaComptcDocsAdmAsync(CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmResponse> retornaListaComptcDocsAdmAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest request);
         
         // CODEGEN: Generating message contract since message solicAutorizDownloadCadastroRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadCadastro", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroResponse solicAutorizDownloadCadastro(CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroResponse solicAutorizDownloadCadastro(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadCadastro", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroResponse> solicAutorizDownloadCadastroAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroResponse> solicAutorizDownloadCadastroAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest request);
         
         // CODEGEN: Generating message contract since message solicAutorizDownloadArqComptcRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqComptc", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcResponse solicAutorizDownloadArqComptc(CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcResponse solicAutorizDownloadArqComptc(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqComptc", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcResponse> solicAutorizDownloadArqComptcAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcResponse> solicAutorizDownloadArqComptcAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest request);
         
         // CODEGEN: Generating message contract since message solicAutorizDownloadArqEntregaRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntrega", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaResponse solicAutorizDownloadArqEntrega(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaResponse solicAutorizDownloadArqEntrega(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntrega", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaResponse> solicAutorizDownloadArqEntregaAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaResponse> solicAutorizDownloadArqEntregaAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest request);
         
         // CODEGEN: Generating message contract since message solicAutorizDownloadArqEntregaPorDataRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntregaPorData", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataResponse solicAutorizDownloadArqEntregaPorData(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataResponse solicAutorizDownloadArqEntregaPorData(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqEntregaPorData", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataResponse> solicAutorizDownloadArqEntregaPorDataAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataResponse> solicAutorizDownloadArqEntregaPorDataAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest request);
         
         // CODEGEN: Generating message contract since message solicAutorizDownloadArqAnualRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqAnual", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualResponse solicAutorizDownloadArqAnual(CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualResponse solicAutorizDownloadArqAnual(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/solicAutorizDownloadArqAnual", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualResponse> solicAutorizDownloadArqAnualAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualResponse> solicAutorizDownloadArqAnualAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest request);
         
         // CODEGEN: Generating message contract since message retornaDtLmtEntrDocsArqsDispRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaDtLmtEntrDocsArqsDisp", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispResponse retornaDtLmtEntrDocsArqsDisp(CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispResponse retornaDtLmtEntrDocsArqsDisp(FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaDtLmtEntrDocsArqsDisp", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispResponse> retornaDtLmtEntrDocsArqsDispAsync(CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispResponse> retornaDtLmtEntrDocsArqsDispAsync(FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest request);
         
         // CODEGEN: Generating message contract since message retornaListaDownloadDocsRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaDownloadDocs", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.retornaListaDownloadDocsResponse retornaListaDownloadDocs(CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsResponse retornaListaDownloadDocs(FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/retornaListaDownloadDocs", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaDownloadDocsResponse> retornaListaDownloadDocsAsync(CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsResponse> retornaListaDownloadDocsAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest request);
         
         // CODEGEN: Generating message contract since message LoginRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/Login", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        CVMDownload.CVMWebCotas.LoginResponse Login(CVMDownload.CVMWebCotas.LoginRequest request);
+        FinancialDataGrabber.CVM.CVMWeb.LoginResponse Login(FinancialDataGrabber.CVM.CVMWeb.LoginRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://www.cvm.gov.br/webservices/Login", ReplyAction="*")]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.LoginResponse> LoginAsync(CVMDownload.CVMWebCotas.LoginRequest request);
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.LoginResponse> LoginAsync(FinancialDataGrabber.CVM.CVMWeb.LoginRequest request);
     }
     
     /// <remarks/>
@@ -171,7 +171,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaComptcDocsRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -182,7 +182,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaComptcDocsRequest() {
         }
         
-        public retornaListaComptcDocsRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc) {
+        public retornaListaComptcDocsRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strDtIniEntregDoc = strDtIniEntregDoc;
@@ -196,7 +196,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaComptcDocsResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string[] retornaListaComptcDocsResult;
@@ -204,7 +204,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaComptcDocsResponse() {
         }
         
-        public retornaListaComptcDocsResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string[] retornaListaComptcDocsResult) {
+        public retornaListaComptcDocsResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string[] retornaListaComptcDocsResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.retornaListaComptcDocsResult = retornaListaComptcDocsResult;
         }
@@ -217,7 +217,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaComptcDocsParticRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -231,7 +231,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaComptcDocsParticRequest() {
         }
         
-        public retornaListaComptcDocsParticRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
+        public retornaListaComptcDocsParticRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strDtIniEntregDoc = strDtIniEntregDoc;
@@ -246,7 +246,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaComptcDocsParticResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string[] retornaListaComptcDocsParticResult;
@@ -254,7 +254,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaComptcDocsParticResponse() {
         }
         
-        public retornaListaComptcDocsParticResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string[] retornaListaComptcDocsParticResult) {
+        public retornaListaComptcDocsParticResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string[] retornaListaComptcDocsParticResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.retornaListaComptcDocsParticResult = retornaListaComptcDocsParticResult;
         }
@@ -267,7 +267,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaComptcDocsAdmRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -281,7 +281,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaComptcDocsAdmRequest() {
         }
         
-        public retornaListaComptcDocsAdmRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
+        public retornaListaComptcDocsAdmRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strDtIniEntregDoc = strDtIniEntregDoc;
@@ -296,7 +296,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaComptcDocsAdmResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string[] retornaListaComptcDocsAdmResult;
@@ -304,7 +304,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaComptcDocsAdmResponse() {
         }
         
-        public retornaListaComptcDocsAdmResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string[] retornaListaComptcDocsAdmResult) {
+        public retornaListaComptcDocsAdmResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string[] retornaListaComptcDocsAdmResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.retornaListaComptcDocsAdmResult = retornaListaComptcDocsAdmResult;
         }
@@ -317,7 +317,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadCadastroRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string strDtRefer;
@@ -328,7 +328,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadCadastroRequest() {
         }
         
-        public solicAutorizDownloadCadastroRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string strDtRefer, string strMotivoAutorizDownload) {
+        public solicAutorizDownloadCadastroRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string strDtRefer, string strMotivoAutorizDownload) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.strDtRefer = strDtRefer;
             this.strMotivoAutorizDownload = strMotivoAutorizDownload;
@@ -342,7 +342,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadCadastroResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string solicAutorizDownloadCadastroResult;
@@ -350,7 +350,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadCadastroResponse() {
         }
         
-        public solicAutorizDownloadCadastroResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadCadastroResult) {
+        public solicAutorizDownloadCadastroResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadCadastroResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.solicAutorizDownloadCadastroResult = solicAutorizDownloadCadastroResult;
         }
@@ -363,7 +363,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqComptcRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -377,7 +377,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqComptcRequest() {
         }
         
-        public solicAutorizDownloadArqComptcRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtComptcDoc, string strMotivoAutorizDownload) {
+        public solicAutorizDownloadArqComptcRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtComptcDoc, string strMotivoAutorizDownload) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strDtComptcDoc = strDtComptcDoc;
@@ -392,7 +392,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqComptcResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string solicAutorizDownloadArqComptcResult;
@@ -400,7 +400,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqComptcResponse() {
         }
         
-        public solicAutorizDownloadArqComptcResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqComptcResult) {
+        public solicAutorizDownloadArqComptcResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqComptcResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.solicAutorizDownloadArqComptcResult = solicAutorizDownloadArqComptcResult;
         }
@@ -413,7 +413,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqEntregaRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -424,7 +424,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqEntregaRequest() {
         }
         
-        public solicAutorizDownloadArqEntregaRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
+        public solicAutorizDownloadArqEntregaRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strMotivoAutorizDownload = strMotivoAutorizDownload;
@@ -438,7 +438,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqEntregaResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string solicAutorizDownloadArqEntregaResult;
@@ -446,7 +446,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqEntregaResponse() {
         }
         
-        public solicAutorizDownloadArqEntregaResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqEntregaResult) {
+        public solicAutorizDownloadArqEntregaResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqEntregaResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.solicAutorizDownloadArqEntregaResult = solicAutorizDownloadArqEntregaResult;
         }
@@ -459,7 +459,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqEntregaPorDataRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -473,7 +473,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqEntregaPorDataRequest() {
         }
         
-        public solicAutorizDownloadArqEntregaPorDataRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtEntregaDoc, string strMotivoAutorizDownload) {
+        public solicAutorizDownloadArqEntregaPorDataRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtEntregaDoc, string strMotivoAutorizDownload) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strDtEntregaDoc = strDtEntregaDoc;
@@ -488,7 +488,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqEntregaPorDataResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string solicAutorizDownloadArqEntregaPorDataResult;
@@ -496,7 +496,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqEntregaPorDataResponse() {
         }
         
-        public solicAutorizDownloadArqEntregaPorDataResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqEntregaPorDataResult) {
+        public solicAutorizDownloadArqEntregaPorDataResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqEntregaPorDataResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.solicAutorizDownloadArqEntregaPorDataResult = solicAutorizDownloadArqEntregaPorDataResult;
         }
@@ -509,7 +509,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqAnualRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -520,7 +520,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqAnualRequest() {
         }
         
-        public solicAutorizDownloadArqAnualRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
+        public solicAutorizDownloadArqAnualRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
             this.strMotivoAutorizDownload = strMotivoAutorizDownload;
@@ -534,7 +534,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class solicAutorizDownloadArqAnualResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string solicAutorizDownloadArqAnualResult;
@@ -542,7 +542,7 @@ namespace CVMDownload.CVMWebCotas {
         public solicAutorizDownloadArqAnualResponse() {
         }
         
-        public solicAutorizDownloadArqAnualResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqAnualResult) {
+        public solicAutorizDownloadArqAnualResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string solicAutorizDownloadArqAnualResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.solicAutorizDownloadArqAnualResult = solicAutorizDownloadArqAnualResult;
         }
@@ -555,7 +555,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaDtLmtEntrDocsArqsDispRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpDoc;
@@ -563,7 +563,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaDtLmtEntrDocsArqsDispRequest() {
         }
         
-        public retornaDtLmtEntrDocsArqsDispRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc) {
+        public retornaDtLmtEntrDocsArqsDispRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpDoc = iCdTpDoc;
         }
@@ -576,7 +576,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaDtLmtEntrDocsArqsDispResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string retornaDtLmtEntrDocsArqsDispResult;
@@ -584,7 +584,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaDtLmtEntrDocsArqsDispResponse() {
         }
         
-        public retornaDtLmtEntrDocsArqsDispResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string retornaDtLmtEntrDocsArqsDispResult) {
+        public retornaDtLmtEntrDocsArqsDispResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string retornaDtLmtEntrDocsArqsDispResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.retornaDtLmtEntrDocsArqsDispResult = retornaDtLmtEntrDocsArqsDispResult;
         }
@@ -597,7 +597,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaDownloadDocsRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iCdTpPartic;
@@ -617,7 +617,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaDownloadDocsRequest() {
         }
         
-        public retornaListaDownloadDocsRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpPartic, string strNrPfPj, int iCdTpDoc, string strDtIni, string strDtFim) {
+        public retornaListaDownloadDocsRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpPartic, string strNrPfPj, int iCdTpDoc, string strDtIni, string strDtFim) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iCdTpPartic = iCdTpPartic;
             this.strNrPfPj = strNrPfPj;
@@ -634,7 +634,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class retornaListaDownloadDocsResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public string[] retornaListaDownloadDocsResult;
@@ -642,7 +642,7 @@ namespace CVMDownload.CVMWebCotas {
         public retornaListaDownloadDocsResponse() {
         }
         
-        public retornaListaDownloadDocsResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string[] retornaListaDownloadDocsResult) {
+        public retornaListaDownloadDocsResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string[] retornaListaDownloadDocsResult) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.retornaListaDownloadDocsResult = retornaListaDownloadDocsResult;
         }
@@ -655,7 +655,7 @@ namespace CVMDownload.CVMWebCotas {
     public partial class LoginRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.cvm.gov.br/webservices/", Order=0)]
         public int iNrSist;
@@ -666,7 +666,7 @@ namespace CVMDownload.CVMWebCotas {
         public LoginRequest() {
         }
         
-        public LoginRequest(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iNrSist, string strSenha) {
+        public LoginRequest(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iNrSist, string strSenha) {
             this.sessaoIdHeader = sessaoIdHeader;
             this.iNrSist = iNrSist;
             this.strSenha = strSenha;
@@ -680,23 +680,23 @@ namespace CVMDownload.CVMWebCotas {
     public partial class LoginResponse {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.cvm.gov.br/webservices/")]
-        public CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader;
+        public FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader;
         
         public LoginResponse() {
         }
         
-        public LoginResponse(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader) {
+        public LoginResponse(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader) {
             this.sessaoIdHeader = sessaoIdHeader;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WsDownloadInfsSoapChannel : CVMDownload.CVMWebCotas.WsDownloadInfsSoap, System.ServiceModel.IClientChannel {
+    public interface WsDownloadInfsSoapChannel : FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WsDownloadInfsSoapClient : System.ServiceModel.ClientBase<CVMDownload.CVMWebCotas.WsDownloadInfsSoap>, CVMDownload.CVMWebCotas.WsDownloadInfsSoap {
+    public partial class WsDownloadInfsSoapClient : System.ServiceModel.ClientBase<FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap>, FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap {
         
         public WsDownloadInfsSoapClient() {
         }
@@ -718,322 +718,322 @@ namespace CVMDownload.CVMWebCotas {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.retornaListaComptcDocsResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaComptcDocs(CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaComptcDocs(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest request) {
             return base.Channel.retornaListaComptcDocs(request);
         }
         
-        public string[] retornaListaComptcDocs(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc) {
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest inValue = new CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest();
+        public string[] retornaListaComptcDocs(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIniEntregDoc = strDtIniEntregDoc;
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaComptcDocs(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaComptcDocs(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.retornaListaComptcDocsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaComptcDocsAsync(CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaComptcDocsAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest request) {
             return base.Channel.retornaListaComptcDocsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsResponse> retornaListaComptcDocsAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc) {
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest inValue = new CVMDownload.CVMWebCotas.retornaListaComptcDocsRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsResponse> retornaListaComptcDocsAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIniEntregDoc = strDtIniEntregDoc;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaComptcDocsAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaComptcDocsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.retornaListaComptcDocsParticResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaComptcDocsPartic(CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaComptcDocsPartic(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest request) {
             return base.Channel.retornaListaComptcDocsPartic(request);
         }
         
-        public string[] retornaListaComptcDocsPartic(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest inValue = new CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest();
+        public string[] retornaListaComptcDocsPartic(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIniEntregDoc = strDtIniEntregDoc;
             inValue.strNrPfPj = strNrPfPj;
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsParticResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaComptcDocsPartic(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaComptcDocsPartic(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.retornaListaComptcDocsParticResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsParticResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaComptcDocsParticAsync(CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaComptcDocsParticAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest request) {
             return base.Channel.retornaListaComptcDocsParticAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsParticResponse> retornaListaComptcDocsParticAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest inValue = new CVMDownload.CVMWebCotas.retornaListaComptcDocsParticRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticResponse> retornaListaComptcDocsParticAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsParticRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIniEntregDoc = strDtIniEntregDoc;
             inValue.strNrPfPj = strNrPfPj;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaComptcDocsParticAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaComptcDocsParticAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaComptcDocsAdm(CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaComptcDocsAdm(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest request) {
             return base.Channel.retornaListaComptcDocsAdm(request);
         }
         
-        public string[] retornaListaComptcDocsAdm(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest inValue = new CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest();
+        public string[] retornaListaComptcDocsAdm(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIniEntregDoc = strDtIniEntregDoc;
             inValue.strNrPfPj = strNrPfPj;
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaComptcDocsAdm(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaComptcDocsAdm(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.retornaListaComptcDocsAdmResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaComptcDocsAdmAsync(CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaComptcDocsAdmAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest request) {
             return base.Channel.retornaListaComptcDocsAdmAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmResponse> retornaListaComptcDocsAdmAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
-            CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest inValue = new CVMDownload.CVMWebCotas.retornaListaComptcDocsAdmRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmResponse> retornaListaComptcDocsAdmAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtIniEntregDoc, string strNrPfPj) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaComptcDocsAdmRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIniEntregDoc = strDtIniEntregDoc;
             inValue.strNrPfPj = strNrPfPj;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaComptcDocsAdmAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaComptcDocsAdmAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadCadastro(CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadCadastro(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest request) {
             return base.Channel.solicAutorizDownloadCadastro(request);
         }
         
-        public string solicAutorizDownloadCadastro(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string strDtRefer, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest();
+        public string solicAutorizDownloadCadastro(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string strDtRefer, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.strDtRefer = strDtRefer;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadCadastro(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadCadastro(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.solicAutorizDownloadCadastroResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadCadastroAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadCadastroAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest request) {
             return base.Channel.solicAutorizDownloadCadastroAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroResponse> solicAutorizDownloadCadastroAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, string strDtRefer, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadCadastroRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroResponse> solicAutorizDownloadCadastroAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, string strDtRefer, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadCadastroRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.strDtRefer = strDtRefer;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadCadastroAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadCadastroAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqComptc(CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqComptc(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest request) {
             return base.Channel.solicAutorizDownloadArqComptc(request);
         }
         
-        public string solicAutorizDownloadArqComptc(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtComptcDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest();
+        public string solicAutorizDownloadArqComptc(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtComptcDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtComptcDoc = strDtComptcDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqComptc(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqComptc(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.solicAutorizDownloadArqComptcResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqComptcAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqComptcAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest request) {
             return base.Channel.solicAutorizDownloadArqComptcAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcResponse> solicAutorizDownloadArqComptcAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtComptcDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqComptcRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcResponse> solicAutorizDownloadArqComptcAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtComptcDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqComptcRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtComptcDoc = strDtComptcDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqComptcAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqComptcAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqEntrega(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqEntrega(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest request) {
             return base.Channel.solicAutorizDownloadArqEntrega(request);
         }
         
-        public string solicAutorizDownloadArqEntrega(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest();
+        public string solicAutorizDownloadArqEntrega(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntrega(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntrega(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.solicAutorizDownloadArqEntregaResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqEntregaAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqEntregaAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest request) {
             return base.Channel.solicAutorizDownloadArqEntregaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaResponse> solicAutorizDownloadArqEntregaAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaResponse> solicAutorizDownloadArqEntregaAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntregaAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntregaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqEntregaPorData(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqEntregaPorData(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest request) {
             return base.Channel.solicAutorizDownloadArqEntregaPorData(request);
         }
         
-        public string solicAutorizDownloadArqEntregaPorData(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtEntregaDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest();
+        public string solicAutorizDownloadArqEntregaPorData(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtEntregaDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtEntregaDoc = strDtEntregaDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntregaPorData(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntregaPorData(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.solicAutorizDownloadArqEntregaPorDataResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqEntregaPorDataAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqEntregaPorDataAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest request) {
             return base.Channel.solicAutorizDownloadArqEntregaPorDataAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataResponse> solicAutorizDownloadArqEntregaPorDataAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtEntregaDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqEntregaPorDataRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataResponse> solicAutorizDownloadArqEntregaPorDataAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strDtEntregaDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqEntregaPorDataRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtEntregaDoc = strDtEntregaDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntregaPorDataAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqEntregaPorDataAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqAnual(CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqAnual(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest request) {
             return base.Channel.solicAutorizDownloadArqAnual(request);
         }
         
-        public string solicAutorizDownloadArqAnual(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest();
+        public string solicAutorizDownloadArqAnual(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqAnual(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqAnual(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.solicAutorizDownloadArqAnualResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.solicAutorizDownloadArqAnualAsync(CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.solicAutorizDownloadArqAnualAsync(FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest request) {
             return base.Channel.solicAutorizDownloadArqAnualAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualResponse> solicAutorizDownloadArqAnualAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
-            CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest inValue = new CVMDownload.CVMWebCotas.solicAutorizDownloadArqAnualRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualResponse> solicAutorizDownloadArqAnualAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc, string strMotivoAutorizDownload) {
+            FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.solicAutorizDownloadArqAnualRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strMotivoAutorizDownload = strMotivoAutorizDownload;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqAnualAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).solicAutorizDownloadArqAnualAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaDtLmtEntrDocsArqsDisp(CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaDtLmtEntrDocsArqsDisp(FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest request) {
             return base.Channel.retornaDtLmtEntrDocsArqsDisp(request);
         }
         
-        public string retornaDtLmtEntrDocsArqsDisp(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc) {
-            CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest inValue = new CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest();
+        public string retornaDtLmtEntrDocsArqsDisp(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
-            CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaDtLmtEntrDocsArqsDisp(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaDtLmtEntrDocsArqsDisp(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.retornaDtLmtEntrDocsArqsDispResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaDtLmtEntrDocsArqsDispAsync(CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaDtLmtEntrDocsArqsDispAsync(FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest request) {
             return base.Channel.retornaDtLmtEntrDocsArqsDispAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispResponse> retornaDtLmtEntrDocsArqsDispAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpDoc) {
-            CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest inValue = new CVMDownload.CVMWebCotas.retornaDtLmtEntrDocsArqsDispRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispResponse> retornaDtLmtEntrDocsArqsDispAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpDoc) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaDtLmtEntrDocsArqsDispRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpDoc = iCdTpDoc;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaDtLmtEntrDocsArqsDispAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaDtLmtEntrDocsArqsDispAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.retornaListaDownloadDocsResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaDownloadDocs(CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaDownloadDocs(FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest request) {
             return base.Channel.retornaListaDownloadDocs(request);
         }
         
-        public string[] retornaListaDownloadDocs(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpPartic, string strNrPfPj, int iCdTpDoc, string strDtIni, string strDtFim) {
-            CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest inValue = new CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest();
+        public string[] retornaListaDownloadDocs(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpPartic, string strNrPfPj, int iCdTpDoc, string strDtIni, string strDtFim) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpPartic = iCdTpPartic;
             inValue.strNrPfPj = strNrPfPj;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIni = strDtIni;
             inValue.strDtFim = strDtFim;
-            CVMDownload.CVMWebCotas.retornaListaDownloadDocsResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaDownloadDocs(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaDownloadDocs(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
             return retVal.retornaListaDownloadDocsResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaDownloadDocsResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.retornaListaDownloadDocsAsync(CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.retornaListaDownloadDocsAsync(FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest request) {
             return base.Channel.retornaListaDownloadDocsAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.retornaListaDownloadDocsResponse> retornaListaDownloadDocsAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iCdTpPartic, string strNrPfPj, int iCdTpDoc, string strDtIni, string strDtFim) {
-            CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest inValue = new CVMDownload.CVMWebCotas.retornaListaDownloadDocsRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsResponse> retornaListaDownloadDocsAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iCdTpPartic, string strNrPfPj, int iCdTpDoc, string strDtIni, string strDtFim) {
+            FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.retornaListaDownloadDocsRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iCdTpPartic = iCdTpPartic;
             inValue.strNrPfPj = strNrPfPj;
             inValue.iCdTpDoc = iCdTpDoc;
             inValue.strDtIni = strDtIni;
             inValue.strDtFim = strDtFim;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).retornaListaDownloadDocsAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).retornaListaDownloadDocsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        CVMDownload.CVMWebCotas.LoginResponse CVMDownload.CVMWebCotas.WsDownloadInfsSoap.Login(CVMDownload.CVMWebCotas.LoginRequest request) {
+        FinancialDataGrabber.CVM.CVMWeb.LoginResponse FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.Login(FinancialDataGrabber.CVM.CVMWeb.LoginRequest request) {
             return base.Channel.Login(request);
         }
         
-        public void Login(ref CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iNrSist, string strSenha) {
-            CVMDownload.CVMWebCotas.LoginRequest inValue = new CVMDownload.CVMWebCotas.LoginRequest();
+        public void Login(ref FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iNrSist, string strSenha) {
+            FinancialDataGrabber.CVM.CVMWeb.LoginRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.LoginRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iNrSist = iNrSist;
             inValue.strSenha = strSenha;
-            CVMDownload.CVMWebCotas.LoginResponse retVal = ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).Login(inValue);
+            FinancialDataGrabber.CVM.CVMWeb.LoginResponse retVal = ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).Login(inValue);
             sessaoIdHeader = retVal.sessaoIdHeader;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.LoginResponse> CVMDownload.CVMWebCotas.WsDownloadInfsSoap.LoginAsync(CVMDownload.CVMWebCotas.LoginRequest request) {
+        System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.LoginResponse> FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap.LoginAsync(FinancialDataGrabber.CVM.CVMWeb.LoginRequest request) {
             return base.Channel.LoginAsync(request);
         }
         
-        public System.Threading.Tasks.Task<CVMDownload.CVMWebCotas.LoginResponse> LoginAsync(CVMDownload.CVMWebCotas.sessaoIdHeader sessaoIdHeader, int iNrSist, string strSenha) {
-            CVMDownload.CVMWebCotas.LoginRequest inValue = new CVMDownload.CVMWebCotas.LoginRequest();
+        public System.Threading.Tasks.Task<FinancialDataGrabber.CVM.CVMWeb.LoginResponse> LoginAsync(FinancialDataGrabber.CVM.CVMWeb.sessaoIdHeader sessaoIdHeader, int iNrSist, string strSenha) {
+            FinancialDataGrabber.CVM.CVMWeb.LoginRequest inValue = new FinancialDataGrabber.CVM.CVMWeb.LoginRequest();
             inValue.sessaoIdHeader = sessaoIdHeader;
             inValue.iNrSist = iNrSist;
             inValue.strSenha = strSenha;
-            return ((CVMDownload.CVMWebCotas.WsDownloadInfsSoap)(this)).LoginAsync(inValue);
+            return ((FinancialDataGrabber.CVM.CVMWeb.WsDownloadInfsSoap)(this)).LoginAsync(inValue);
         }
     }
 }

@@ -8,18 +8,40 @@ namespace FinancialDataGrabber.Core.Actor
 {
     using Akka.Actor;
 
-    internal class CommandActor
+    using FinancialDataGrabber.Core.Message;
+    using FinancialDataGrabber.CVM;
+    using FinancialDataGrabber.CVM.Actors;
+    using FinancialDataGrabber.CVM.Messages;
+
+    public class CommandActor
         : UntypedActor
     {
+        private IActorRef cvmActor;
+
+        public CommandActor(Int32 userId, String pwd)
+        {
+            UserId = userId;
+            Password = pwd;
+        }
+
+        protected Int32 UserId { get; private set; }
+        protected String Password { get; private set; }
+
+
         protected override void OnReceive(object message)
         {
-            var str = (message as String);
-            if (str != null)
+            if (message is FinancialDataGrabber.Core.Message.UpdateFundos)
             {
-                if ("fundos".Equals(str, StringComparison.CurrentCultureIgnoreCase))
-                {
-                    Console.WriteLine("Fundos");
-                } 
+                cvmActor = Context.ActorOf(Props.Create<CVMActor>(() => new CVMActor(UserId, Password)), "cvmActor");
+                cvmActor.Tell(new FinancialDataGrabber.CVM.Messages.UpdateFundos());
+            }
+            else if (message is Shutdown)
+            {
+                Console.WriteLine("Shutting down...");
+            }
+            else
+            {
+                Console.WriteLine("Mensagem desconhecida: " + message);
             }
         }
     }
